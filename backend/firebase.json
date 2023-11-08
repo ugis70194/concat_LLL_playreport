@@ -1,0 +1,25 @@
+{
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "venv",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    }
+  ],
+  "emulators": {
+    "functions": {
+      "host": "0.0.0.0",
+      "port": 5001
+    },
+    "ui": {
+      "host": "0.0.0.0",
+      "enabled": true
+    },
+    "singleProjectMode": true
+  }
+}

@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ENV PYTHON_VERSION 3.10
+ENV PYTHON_VERSION 3.11
 ENV HOME /root
 ENV PYTHON_ROOT $HOME/local/python-$PYTHON_VERSION
 ENV PATH $PYTHON_ROOT/bin:$PATH
@@ -13,9 +13,13 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 RUN apt update
 RUN apt install -y libopencv-dev
 
-# install python and pip
-RUN apt install -y python3 python3-pip
-RUN pip install --upgrade pip
+# install python and nodejs
+RUN apt install -y python3.11-venv python3-pip nodejs npm curl
 
-# install opencv
-RUN pip install opencv-python firebase_functions
+# update nodejs and npm
+RUN npm install n -g
+RUN n stable
+RUN apt purge -y nodejs npm && apt autoremove -y
+
+# install firebase
+RUN npm install -g firebase-tools

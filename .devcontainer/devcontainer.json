@@ -1,5 +1,5 @@
 {
-  "name": "python 3.10 and opencv",
+  "name": "opencv_on_FireFunctions",
   "service": "opencv",
   "dockerComposeFile": "docker-compose.yml",
   "workspaceFolder": "/home/src/app",

@@ -5,9 +5,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: opencv
+    container_name: opencv_on_FireFunctions
     volumes:
-      - ../python:/home/src/app
+      - ../backend:/home/src/app
     stdin_open: true
     ports:
-      - 3000:3000
+      - "127.0.0.1:4000:4000"
+      - "127.0.0.1:4400:4400"
+      - "127.0.0.1:4500:4500"
+      - "127.0.0.1:5001:5001"
+      - "127.0.0.1:9299:9299"
