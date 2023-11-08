@@ -1,0 +1,15 @@
+{
+  "name": "python 3.10 and opencv",
+  "service": "opencv",
+  "dockerComposeFile": "docker-compose.yml",
+  "workspaceFolder": "/home/src/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+          "oderwat.indent-rainbow",
+          "VisualStudioExptTeam.vscodeintellicode",
+          "VisualStudioExptTeam.intellicode-api-usage-examples"
+        ]
+    }
+  }
+}
