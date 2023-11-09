@@ -34,6 +34,8 @@ let postOption = {
 };
 
 async function postData() {
+  sumbitButton.disabled = true;
+
   const formData = new FormData();
   formData.append("img_A", fileSelector.files[0]);
   formData.append("img_B", fileSelector.files[1]);
@@ -54,6 +56,7 @@ function init(){
   image_A.src = "";
   image_B.src = "";
   alert.innerText = "";
+  sumbitButton.disabled = false;
 }
 
 async function readImages(){
