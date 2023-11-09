@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <div id="input">
+      <p>くっつけたいスクリーンショットを2つ選択してください</p>
+      <input id="fileselector" type="file" multiple />
+      <p id="alert" style="color:crimson;"></p>
+    </div>
+    <div id="selected" style="display:flex;">
+      <img id="img_a" src="" style="width: 40vw;"/>
+      <img id="img_b" src="" style="width: 40vw;"/>
+    </div>
+    <div>
+      <p>
+        送信を押すと、スクリーンショットがサーバに送信されます
+        <br>
+        しばらく待つと、つながったスクリーンショットが表示されます
+      </p>
+      <input id="submit" type="submit" />
+    </div>
+    <div>
+      <img id="result" src="" style="width: 90vw;"/>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

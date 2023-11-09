@@ -1,2 +1,2 @@
 firebase_functions~=0.1.0
-opencv-python~=4.8.1
+opencv-python-headless~=4.8.1
